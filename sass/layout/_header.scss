@@ -19,9 +19,9 @@
 
   // あまりに小さい画面でハイレゾにする必要はないためmin-widthも設定
   //dpiに関わらずvwが2000以上だったら即適用
-  @media (min-resolution: 192dpi) and (min-width: 37.5em),
-          (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), //for safari
-      (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+          only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), //for safari
+          only screen and (min-width: 125em) {
     background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.8),
